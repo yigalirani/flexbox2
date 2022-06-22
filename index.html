@@ -1,0 +1,42 @@
+<style>
+  * {
+    font-size: 200px;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .splitter {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+  }
+  .splitter > div{
+    overflow: scroll;
+  }
+  .left {
+    background-color: bisque;
+  }
+  .right {
+    background-color: rgb(67, 228, 62);
+  }
+  .top {
+    background-color: red;
+  }
+</style>
+<div class="top">
+  top
+</div>
+<div class="splitter">
+  <div class="left">
+    this is panel 1
+  </div>
+  <div class="right">
+    this is panel 2
+  </div>
+</div>
